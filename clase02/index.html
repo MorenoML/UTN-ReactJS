@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="centrado">Ejercicios Clase 2</h1>
+    <br><br>
+    <!-- Ejercicio 1 -->
+    <h2 class="centrado">Ejercicio 1</h2>
+    <p>function suma (a,b,callback){ <br>
+        let c = a +b;<br>
+        callback();<br>
+        }
+    </p>
+    <br>
+    <p><b>Pregunta 1:</b> ¿Que es el tercer parámetro recibido?</p>
+    <p>El tercer parámetro recibito (callback) es una devolución de llamada, y lo que hace es que la función
+        <b>suma</b>
+        ejecute la devolución de llamada una vez finalizado el cálculo.
+    </p>
+    <br>
+    <p><b>Pregunta 2:</b> ¿En que casos es obligatorio desarrollar este tipo de funciones?</p>
+    <p>Los casos en que es obligatorio desarrollar este tipo de funciones se da en las funciones asíncronas, donde la
+        función tiene que esperar a otra función (que se ejecute), como por ejemplo que se cargue un archivo. </p>
+    <br>
+    <span>El resultado de la suma de 25 + 100 es : </span>
+    <span id="suma"></span>
+
+    <hr>
+
+    <!-- Ejercicio 2 -->
+    <div class="centrado">
+        <h2>Ejercicio 2 - CALCULADORA</h2>
+        <br>
+        <div>
+            <label for="operando1">Operando 1:</label>
+            <input type="number" name="operando1" id="operando1" value=0 required>
+        </div>
+        <br>
+        <div>
+            <label for="operando2">Operando 2:</label>
+            <input type="number" name="operando2" id="operando2" value=0 required>
+        </div>
+        <div>
+            <p><b>Operación:</b></p>
+            <button class="operaciones">+</button>
+            <button class="operaciones">-</button>
+            <button class="operaciones">x</button>
+            <button class="operaciones">/</button>
+        </div>
+        <div>
+            <p id="resultadoCalculadora"></p>
+            <br>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="ejercicio1.js"></script>
+<script src="ejercicio2.js"></script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Seguro No Pagamos Cooperativa</title>
+</head>
+
+<body>
+  <header>
+    <h1>Seguro No Pagamos Cooperativa</h1>
+  </header>
+  <main>
+    <h2>Ingrese sus datos, un asesor lo contactará.</h2>
+    <form action="./form-prueba.html" method="get" target="_blank" id="form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required><br><br>
+
+      <label for="dni">DNI:</label>
+      <input type="text" id="dni" name="dni" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required><br><br>
+
+      <label for="tipoSeguro">Tipo de seguro:</label>
+      <select id="tipoSeguro" name="tipoSeguro" onchange="mostrarValorSeguro()">
+        <option value="basico">Básico</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="premium">Premium</option>
+      </select>
+
+      <div id="valorSeguro">
+        <!-- Aquí se mostrará el valor del seguro seleccionado -->
+      </div>
+
+      <br><br>
+
+      <input type="submit" value="Enviar" onclick="enviarYRestablecer()">
+    </form>
+  </main>
+  <footer>
+    <h3>Grupo F: CEPEDA - GONZALEZ - LUENGO - MORENO - SEGURA - LEZCANO OJEDA - ZACHAREWICZ - ORDOÑEZ</h3>
+  </footer>
+  <script src="./archivo.js"></script>
+</body>
+
+</html>

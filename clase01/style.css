@@ -1,0 +1,106 @@
+
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #6a8b90;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+h1{
+  font-size: x-large;
+  background-color: #6a8b90;
+}
+
+main{
+  background-color: #dee8ea;
+}
+
+h2 {
+  text-align: center;
+  background-color: #c9d7d8;
+  color: #fff;
+  padding: 10px;
+  text-shadow: 1px 1px 2px black;
+}
+
+form {
+  background-image: url('./img/seguros.jpg');
+  background-repeat: no-repeat;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #6a8b90;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  color: #344747;
+}
+
+#valorSeguro {
+  margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #344747;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: white;
+  color: #344747;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  background-color:#c9d7d8 ;
+  height: 50px;
+}
+
+h3{
+  color: white;
+  padding-left: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+

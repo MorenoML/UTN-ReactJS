@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <br>
+  <h1 style="text-align: center;">Se ha enviado la siguiente información desde la página Web:</h1>
+  <div style="display:flex; justify-content: center;">
+    <table style="border-collapse: separate; border: 2px solid;" width="250">
+      <tr>
+        <th style="text-align: center; border: 1px solid; padding: 10px;">Campo Formulario</th>
+        <th style="text-align: center; border: 1px solid; padding: 10px;">Valor Campo</th>
+      </tr>
+
+      <script>
+        var args = location.search.substr(1).split('&');
+        for (var i = 0; i < args.length; ++i) {
+          var parts = args[i].split('=');
+          if (parts != null) {
+            var field = parts[0];
+            var value = parts[1];
+            if (value == null) {
+              value = "null"
+            }
+            else {
+              value = unescape(value.replace(/\+/g, ' '));
+            }
+
+            document.write('<tr><td style="text-align: left; border: 1px solid; padding: 5px; text-transform: uppercase;">' + field + '</td>');
+            document.write('<td style="text-align: center; border: 1px solid;padding: 5px;">' + value + '</td></tr>');
+          }
+        }
+      </script>
+
+    </table>
+  </div>
+</body>
+
+</html>

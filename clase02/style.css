@@ -1,0 +1,12 @@
+.centrado {
+    text-align: center;
+    align-items: center;
+}
+
+.operaciones {
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    margin: 10px;
+    font-weight:bold;
+}
